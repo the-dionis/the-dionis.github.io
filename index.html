@@ -13,13 +13,14 @@
         }
         .gallery {
             display: flex;
+            flex-wrap: wrap; /* Bilder werden in einer Zeile umgebrochen */
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .gallery img {
-            width: 300px;
-            height: 200px;
+            width: auto; /* Bildbreite anpassen */
+            height: 200px; /* Festlegung der Bildhöhe */
             margin: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,9 +29,13 @@
         .gallery img:hover {
             transform: scale(1.1);
         }
+        h1 {
+            text-align: center; /* Titel zentrieren */
+        }
     </style>
 </head>
 <body>
+    <h1>Meine Bildergalerie</h1>
     <div class="gallery">
         <img src="assets/d1.jpeg" alt="Bild 1">
         <img src="assets/d2.jpg" alt="Bild 2">
@@ -38,5 +43,4 @@
     </div>
 </body>
 </html>
-
 
